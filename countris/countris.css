@@ -1,0 +1,14 @@
+.country {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+}
+#section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#display {
+  height: 200px;
+  text-align: center;
+}
