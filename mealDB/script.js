@@ -19,6 +19,14 @@ document.getElementById('basic-addon2').addEventListener('click', () => {
 })
 // -----show result in display
 const displayResult = (searchResult) => {
+  if (searchResult.meals == null) {
+    toast.style.display = 'block'
+    document.getElementById('error').innerText = "Error";
+    document.getElementById('error').style.color = "red";
+    document.getElementById('toast-body').innerText = "Not Found Anything";
+    document.getElementById('toast-body').style.color = "red";
+    return;
+  }
     const container = document.getElementById('container');
     container.textContent = '';
     const AllSearchResult = searchResult.meals;
