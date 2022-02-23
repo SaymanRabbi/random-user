@@ -24,7 +24,7 @@ const ShowImg = (name) => {
         })
         document.getElementById('calender').addEventListener('mouseenter', () => {
             tittle.innerText = `My birthday is`
-            names.innerText = `${value.dob.date}`
+            names.innerText = `${value.dob.date.slice(0,10)}`
         })
         document.getElementById('map').addEventListener('mouseenter', () => {
             tittle.innerText = `My address is`
